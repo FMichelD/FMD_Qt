@@ -1,0 +1,15 @@
+QPushButton#btnNewSale {
+    font-size:14pt;
+    border:none;
+    border-radius:5px;
+}
+
+QPushButton#btnNewSale:enabled {
+    background:#248;
+    color:#fff;
+}
+
+QPushButton#btnNewSale:disabled {
+    background:#666;
+    color:#ccc;
+}

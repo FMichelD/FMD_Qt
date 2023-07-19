@@ -1,0 +1,1 @@
+select * from tb_collaborators where username_collab='Usuário' and password_collab='ea725eab12c19f535f7a9abcaa3d601f08e9bfbcba1c1f65342534f8922c75d0'

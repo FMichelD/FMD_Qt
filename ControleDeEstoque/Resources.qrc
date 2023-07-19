@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Imagens/ClosedLock.png</file>
+        <file>Imagens/OpenedLock.png</file>
+        <file>stylesheets/btnNewSale.css</file>
+        <file>Imagens/cancel.png</file>
+        <file>Imagens/Login.png</file>
+        <file>Imagens/stock.png</file>
+        <file>Imagens/collaborator.png</file>
+        <file>Imagens/sell.png</file>
+        <file>Imagens/about.png</file>
+        <file>Imagens/exit.png</file>
+    </qresource>
+</RCC>
