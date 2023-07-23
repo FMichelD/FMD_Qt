@@ -1,5 +1,5 @@
-#ifndef FMLOGIN_H
-#define FMLOGIN_H
+#ifndef FMLogin_H
+#define FMLogin_H
 
 #include "DBConnection.h"
 
@@ -32,4 +32,4 @@ private:
     void login();
 };
 
-#endif // FMLOGIN_H
+#endif // FMLogin_H

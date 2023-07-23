@@ -1,5 +1,5 @@
-#include "fmlogin.h"
-#include "ui_fmlogin.h"
+#include "FMLogin.h"
+#include "ui_FMLogin.h"
 
 #include <QCryptographicHash>
 #include <QSqlQuery>

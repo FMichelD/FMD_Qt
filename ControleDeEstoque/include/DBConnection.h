@@ -1,5 +1,5 @@
-#ifndef DBCONNECTION_H
-#define DBCONNECTION_H
+#ifndef DB_CONNECTION_H
+#define DB_CONNECTION_H
 
 #include <QApplication>
 #include <QSql>
@@ -19,7 +19,7 @@ public:
 
     bool open() {
         QString applicationPath = qApp->applicationDirPath();
-        QString databasePath = applicationPath + "/../ControleDeEstoque/db/StockControl.db";
+        QString databasePath = applicationPath + "/../db/StockControl.db";
         database.setDatabaseName(databasePath);
         if(!database.open())
         {
@@ -33,4 +33,4 @@ public:
     QSqlDatabase database;
 };
 
-#endif // DBCONNECTION_H
+#endif // DB_CONNECTION_H

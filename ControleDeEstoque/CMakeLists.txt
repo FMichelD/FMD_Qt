@@ -2,6 +2,12 @@ cmake_minimum_required(VERSION 3.5)
 
 project(ControleDeEstoque VERSION 0.1 LANGUAGES CXX)
 
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+
+set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_SOURCE_DIR}/ui)
+
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
@@ -15,13 +21,30 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools Cor
 set(TS_FILES ControleDeEstoque_pt_BR.ts)
 
 set(PROJECT_SOURCES
-        main.cpp
-        fmprincipal.cpp fmprincipal.h fmprincipal.ui
-        fmlogin.cpp fmlogin.h fmlogin.ui
-        DBConnection.h
-        FMNewSale.h FMNewSale.cpp FMNewSale.ui
-        FMEmployeeManagement.h FMEmployeeManagement.cpp FMEmployeeManagement.ui
-        FMStockManagement.h FMStockManagement.cpp FMStockManagement.ui
+    #cpp
+        src/main.cpp
+        src/FMPrincipal.cpp  
+        src/FMLogin.cpp  
+        src/FMNewSale.cpp
+        src/FMEmployeeManagement.cpp
+        src/FMStockManagement.cpp
+
+    #headers
+        include/FMPrincipal.h
+        include/FMLogin.h
+        include/DBConnection.h
+        include/FMNewSale.h  
+        include/FMEmployeeManagement.h 
+        include/FMStockManagement.h  
+
+    #form
+        ui/FMPrincipal.ui
+        ui/FMLogin.ui
+        ui/FMNewSale.ui
+        ui/FMEmployeeManagement.ui
+        ui/FMStockManagement.ui
+    
+    #others
         ${TS_FILES}
         Resources.qrc
 )
@@ -52,6 +75,8 @@ else()
 
     qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
 endif()
+
+target_include_directories(ControleDeEstoque PRIVATE ${CMAKE_SOURCE_DIR}/include)
 
 target_link_libraries(ControleDeEstoque PRIVATE
     Qt${QT_VERSION_MAJOR}::Widgets

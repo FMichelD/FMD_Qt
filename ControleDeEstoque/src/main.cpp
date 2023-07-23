@@ -1,4 +1,4 @@
-#include "fmprincipal.h"
+#include "FMPrincipal.h"
 
 #include <QApplication>
 #include <QLocale>

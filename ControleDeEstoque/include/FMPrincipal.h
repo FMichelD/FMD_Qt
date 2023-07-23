@@ -1,5 +1,5 @@
-#ifndef FMPRINCIPAL_H
-#define FMPRINCIPAL_H
+#ifndef FM_PRINCIPAL_H
+#define FM_PRINCIPAL_H
 
 #include <QMainWindow>
 #include <QtSql>
@@ -38,4 +38,4 @@ private:
 
     void messageBoxTestButtons();
 };
-#endif // FMPRINCIPAL_H
+#endif // FMPrincipal_H

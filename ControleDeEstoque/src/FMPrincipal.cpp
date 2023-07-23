@@ -1,6 +1,6 @@
-#include "fmprincipal.h"
-#include "./ui_fmprincipal.h"
-#include "fmlogin.h"
+#include "FMPrincipal.h"
+#include "./ui_FMPrincipal.h"
+#include "FMLogin.h"
 #include "FMNewSale.h"
 #include "FMEmployeeManagement.h"
 #include "FMStockManagement.h"
@@ -43,13 +43,13 @@ void FMPrincipal::blockScreen()
         ui->btnLock->setIcon(*icoClosedLock);
         disableAllWidgets();
     } else {
-        FMLogin fmLogin;
-        fmLogin.exec();
-        ui->lblCollabName->setText(fmLogin.getCollabName());
-        isUserLogged = fmLogin.getIsLogged();
+        FMLogin FMLogin;
+        FMLogin.exec();
+        ui->lblCollabName->setText(FMLogin.getCollabName());
+        isUserLogged = FMLogin.getIsLogged();
         ui->btnLock->setIcon(*icoOpenedLock);
 
-        QString userAccessLevel = fmLogin.getCollabAccessLevel();
+        QString userAccessLevel = FMLogin.getCollabAccessLevel();
         if(userAccessLevel == "USER_REGISTER_ONLY")
         {
             enableToRegisterOnly();
