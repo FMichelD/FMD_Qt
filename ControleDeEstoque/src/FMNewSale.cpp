@@ -6,6 +6,7 @@ FMNewSale::FMNewSale(QWidget *parent) :
     ui(new Ui::FMNewSale)
 {
     ui->setupUi(this);
+    ui->pushButton->adjustSize();
 }
 
 FMNewSale::~FMNewSale()

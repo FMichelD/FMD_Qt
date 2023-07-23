@@ -51,9 +51,23 @@
 <context>
     <name>FMNewSale</name>
     <message>
-        <location filename="ui/FMNewSale.ui" line="13"/>
-        <location filename="build/GCC 12.2.0 x86_64-linux-gnu/Debug/ControleDeEstoque_autogen/include/ui_FMNewSale.h" line="35"/>
+        <location filename="ui/FMNewSale.ui" line="14"/>
+        <location filename="build/GCC 12.2.0 x86_64-linux-gnu/Debug/ControleDeEstoque_autogen/include/ui_FMNewSale.h" line="59"/>
         <source>Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="ui/FMNewSale.ui" line="32"/>
+        <location filename="ui/FMNewSale.ui" line="45"/>
+        <location filename="build/GCC 12.2.0 x86_64-linux-gnu/Debug/ControleDeEstoque_autogen/include/ui_FMNewSale.h" line="60"/>
+        <location filename="build/GCC 12.2.0 x86_64-linux-gnu/Debug/ControleDeEstoque_autogen/include/ui_FMNewSale.h" line="61"/>
+        <source>PushButton</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="ui/FMNewSale.ui" line="58"/>
+        <location filename="build/GCC 12.2.0 x86_64-linux-gnu/Debug/ControleDeEstoque_autogen/include/ui_FMNewSale.h" line="62"/>
+        <source>TextLabel</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
